@@ -709,7 +709,6 @@ body {
 //Nav
 header {
   border-bottom: 1px solid black;
-  background-image: url(../images/background.svg);
 }
 nav {
   display: flex;
@@ -725,6 +724,7 @@ nav {
 
 nav .button {
   margin-top: 0.5rem;
+  background-color: #e6e6ff;
   @media (min-width: @bp-larger-than-tablet) {
     color: white;
     border: 1px solid black;
@@ -770,7 +770,7 @@ nav a {
 .landing-body a {
   color: black;
   margin-top: 1rem;
-  background-color: #aaf0d1;
+  background-color: #e6e6ff;
   height: 50px;
   width: 200px;
   font-size: 1.5rem;
@@ -791,7 +791,6 @@ nav a {
 .main-content > * {
   padding: 2rem;
   padding-bottom: 0.1rem;
-  width: 100%;
   border-top: 1px solid black;
   img {
     max-width: 100%;
@@ -802,8 +801,22 @@ nav a {
   }
 }
 
-.sprite-slideshow {
-  height: 30rem;
+footer {
+  display: flex;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 1%;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+  }
+  .button {
+    margin-top: 0.5rem;
+    background-color: #e6e6ff;
+  }
 }
 
 /* Media Queries

@@ -572,7 +572,6 @@ body {
 }
 header {
   border-bottom: 1px solid black;
-  background-image: url(../images/background.svg);
 }
 nav {
   display: flex;
@@ -589,6 +588,7 @@ nav {
 }
 nav .button {
   margin-top: 0.5rem;
+  background-color: #e6e6ff;
 }
 @media (min-width: 750px) {
   nav .button {
@@ -637,7 +637,7 @@ nav a {
 .landing-body a {
   color: black;
   margin-top: 1rem;
-  background-color: #aaf0d1;
+  background-color: #e6e6ff;
   height: 50px;
   width: 200px;
   font-size: 1.5rem;
@@ -657,7 +657,6 @@ nav a {
 .main-content > * {
   padding: 2rem;
   padding-bottom: 0.1rem;
-  width: 100%;
   border-top: 1px solid black;
 }
 .main-content > * img {
@@ -667,8 +666,22 @@ nav a {
 .main-content > * h2 {
   text-align: center;
 }
-.sprite-slideshow {
-  height: 30rem;
+footer {
+  display: flex;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 1%;
+  justify-content: space-between;
+  align-items: center;
+}
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+footer .button {
+  margin-top: 0.5rem;
+  background-color: #e6e6ff;
 }
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
