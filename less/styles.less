@@ -707,6 +707,9 @@ body {
 }
 
 //Nav
+header {
+  border-bottom: 1px solid black;
+}
 nav {
   display: flex;
   margin-right: 10%;
@@ -740,10 +743,11 @@ nav a {
   }
 }
 
-//Body
+//Landing
 .mobile-image {
   width: 100%;
-  margin-top: 10%;
+  margin-top: 5%;
+  opacity: 0.8;
   @media (min-width: @bp-larger-than-tablet) {
     display: none;
   }
@@ -751,19 +755,20 @@ nav a {
 .landing-body {
   margin: auto;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 5%;
+  position: relative;
   @media (min-width: @bp-larger-than-tablet) {
     margin-top: 15rem;
   }
 }
 
 .landing-body h4 {
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .landing-body a {
   color: black;
-  margin-top: 3rem;
+  margin-top: 1rem;
   background-color: #cef4ca;
   height: 50px;
   width: 200px;
@@ -776,23 +781,28 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 2rem;
   @media (min-width: @bp-larger-than-tablet) {
     display: none;
   }
 }
 
 .main-content > * {
-  border: 1px solid black;
   padding: 2rem;
   padding-bottom: 0.1rem;
+  width: 100%;
+  border-top: 1px solid black;
+  img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    text-align: center;
+  }
 }
 
-.main-content > * img {
-  max-width: 100%;
-}
-
-.redefine-nutrition {
-  width: 90%;
+.sprite-slideshow {
+  height: 30rem;
 }
 
 /* Media Queries

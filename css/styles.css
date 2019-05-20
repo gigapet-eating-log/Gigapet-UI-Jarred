@@ -570,6 +570,9 @@ body {
     color: white;
   }
 }
+header {
+  border-bottom: 1px solid black;
+}
 nav {
   display: flex;
   margin-right: 10%;
@@ -608,7 +611,8 @@ nav a {
 }
 .mobile-image {
   width: 100%;
-  margin-top: 10%;
+  margin-top: 5%;
+  opacity: 0.8;
 }
 @media (min-width: 750px) {
   .mobile-image {
@@ -618,7 +622,8 @@ nav a {
 .landing-body {
   margin: auto;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 5%;
+  position: relative;
 }
 @media (min-width: 750px) {
   .landing-body {
@@ -626,11 +631,11 @@ nav a {
   }
 }
 .landing-body h4 {
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 .landing-body a {
   color: black;
-  margin-top: 3rem;
+  margin-top: 1rem;
   background-color: #cef4ca;
   height: 50px;
   width: 200px;
@@ -641,6 +646,7 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 2rem;
 }
 @media (min-width: 750px) {
   .main-content {
@@ -648,15 +654,20 @@ nav a {
   }
 }
 .main-content > * {
-  border: 1px solid black;
   padding: 2rem;
   padding-bottom: 0.1rem;
+  width: 100%;
+  border-top: 1px solid black;
 }
 .main-content > * img {
   max-width: 100%;
+  margin-bottom: 1rem;
 }
-.redefine-nutrition {
-  width: 90%;
+.main-content > * h2 {
+  text-align: center;
+}
+.sprite-slideshow {
+  height: 30rem;
 }
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
