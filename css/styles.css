@@ -572,6 +572,7 @@ body {
 }
 header {
   border-bottom: 1px solid black;
+  background-image: url(../images/background.svg);
 }
 nav {
   display: flex;
@@ -636,7 +637,7 @@ nav a {
 .landing-body a {
   color: black;
   margin-top: 1rem;
-  background-color: #cef4ca;
+  background-color: #aaf0d1;
   height: 50px;
   width: 200px;
   font-size: 1.5rem;
