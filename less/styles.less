@@ -25,6 +25,7 @@ body {
 header {
   border-bottom: 1px solid black;
 }
+
 nav {
   display: flex;
   margin-right: 10%;
@@ -56,6 +57,15 @@ nav a {
     margin-right: 5%;
     margin-bottom: 1%;
   }
+}
+
+a:hover {
+  color: #e6e6ff;
+}
+
+a:active {
+  transform: scale(0.95);
+  box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 //Landing
@@ -233,6 +243,10 @@ nav a {
 .sprite-slideshow {
   div {
     animation: fadeFromRight 1.5s;
+    img {
+      width: 50%;
+      margin: auto;
+    }
   }
   p {
     animation: fadeFromLeft 1.5s;

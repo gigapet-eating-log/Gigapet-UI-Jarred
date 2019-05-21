@@ -362,6 +362,13 @@ nav a {
     margin-bottom: 1%;
   }
 }
+a:hover {
+  color: #e6e6ff;
+}
+a:active {
+  transform: scale(0.95);
+  box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
 .mobile-image {
   width: 100%;
   opacity: 0.8;
@@ -515,6 +522,10 @@ nav a {
 }
 .sprite-slideshow div {
   animation: fadeFromRight 1.5s;
+}
+.sprite-slideshow div img {
+  width: 50%;
+  margin: auto;
 }
 .sprite-slideshow p {
   animation: fadeFromLeft 1.5s;
