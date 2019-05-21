@@ -7,6 +7,26 @@
 * 12/29/2014
 * Less Version by Seth Coelen https://github.com/whatsnewsaes
 */
+@keyframes fadeFromLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeFromRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
 body {
   font-size: 1.5em;
   /* currently ems cause chrome bug misinterpreting rems on body element */
@@ -369,6 +389,17 @@ nav a {
     margin-top: 0px;
   }
 }
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.landing-content {
+  animation: fadein 4s;
+}
 @media (min-width: 750px) {
   .landing-content {
     text-align: center;
@@ -407,6 +438,10 @@ nav a {
     margin-top: 20%;
   }
 }
+.landing-content a:active {
+  transform: scale(0.95);
+  box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
 .main-content {
   display: flex;
   flex-direction: column;
@@ -416,6 +451,11 @@ nav a {
 @media (min-width: 750px) {
   .main-content {
     flex-direction: column;
+  }
+}
+@media (min-width: 750px) {
+  .main-content {
+    display: none;
   }
 }
 .main-content > * {
@@ -439,18 +479,50 @@ nav a {
   }
   .main-content > * > * {
     width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .main-content > * > p {
+    margin: auto;
   }
 }
 .child-healthfacts div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  animation: fadeFromLeft 1.5s;
 }
 .child-healthfacts p {
-  margin: auto;
+  animation: fadeFromRight 1.5s;
 }
 .redefine-nutrition div {
-  order: 2;
+  animation: fadeFromRight 1.5s;
+}
+.redefine-nutrition ol {
+  animation: fadeFromLeft 1.5s;
+}
+@media (min-width: 750px) {
+  .redefine-nutrition div {
+    order: 2;
+  }
+  .redefine-nutrition ol {
+    margin: auto;
+  }
+}
+.retro-game div {
+  animation: fadeFromLeft 1.5s;
+}
+.retro-game p {
+  animation: fadeFromRight 1.5s;
+}
+.sprite-slideshow div {
+  animation: fadeFromRight 1.5s;
+}
+.sprite-slideshow p {
+  animation: fadeFromLeft 1.5s;
+}
+@media (min-width: 750px) {
+  .sprite-slideshow div {
+    order: 2;
+  }
 }
 footer {
   display: flex;
@@ -469,4 +541,18 @@ footer a {
 footer .button {
   margin-top: 0.5rem;
   background-color: #e6e6ff;
+}
+@media (min-width: 750px) {
+  footer {
+    width: 80%;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+  }
+}
+@media (min-width: 750px) {
+  footer {
+    display: none;
+  }
 }
