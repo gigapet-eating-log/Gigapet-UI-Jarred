@@ -243,10 +243,6 @@ a:active {
 .sprite-slideshow {
   div {
     animation: fadeFromRight 1.5s;
-    img {
-      width: 50%;
-      margin: auto;
-    }
   }
   p {
     animation: fadeFromLeft 1.5s;
@@ -254,6 +250,10 @@ a:active {
   @media (min-width: @bp-larger-than-tablet) {
     div {
       order: 2;
+    }
+    img {
+      width: 50%;
+      margin: auto;
     }
   }
 }
