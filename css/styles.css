@@ -303,13 +303,6 @@ html {
 body {
   color: black;
 }
-@media (min-width: 750px) {
-  body {
-    background-size: cover;
-    background-image: url("../images/Landing-Background.jpg");
-    color: white;
-  }
-}
 header {
   border-bottom: 1px solid black;
 }
@@ -324,6 +317,7 @@ nav {
 @media (min-width: 750px) {
   nav {
     justify-content: flex-end;
+    margin-right: 5%;
   }
 }
 nav .button {
@@ -332,7 +326,6 @@ nav .button {
 }
 @media (min-width: 750px) {
   nav .button {
-    color: white;
     border: 1px solid black;
   }
 }
@@ -343,7 +336,6 @@ nav a {
 }
 @media (min-width: 750px) {
   nav a {
-    color: white;
     margin-top: 1.1rem;
     font-size: 1.25rem;
     margin-right: 5%;
@@ -352,29 +344,56 @@ nav a {
 }
 .mobile-image {
   width: 100%;
-  margin-top: 5%;
   opacity: 0.8;
 }
 @media (min-width: 750px) {
   .mobile-image {
     display: none;
+    margin-top: 0px;
   }
 }
 .landing-body {
   margin: auto;
   text-align: center;
   margin-top: 5%;
-  position: relative;
 }
 @media (min-width: 750px) {
   .landing-body {
-    margin-top: 15rem;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/Landing-Background.jpg");
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 0px;
   }
 }
-.landing-body h4 {
+@media (min-width: 750px) {
+  .landing-content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .landing-content h1 {
+    font-weight: bold;
+    font-size: 5rem;
+  }
+}
+.landing-content h4 {
   margin-top: 3rem;
 }
-.landing-body a {
+@media (min-width: 750px) {
+  .landing-content h4 {
+    margin-top: 30%;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 5rem;
+  }
+}
+.landing-content a {
   color: black;
   margin-top: 1rem;
   background-color: #e6e6ff;
@@ -382,6 +401,11 @@ nav a {
   width: 200px;
   font-size: 1.5rem;
   padding: 5px 40px;
+}
+@media (min-width: 750px) {
+  .landing-content a {
+    margin-top: 20%;
+  }
 }
 .main-content {
   display: flex;
@@ -391,7 +415,7 @@ nav a {
 }
 @media (min-width: 750px) {
   .main-content {
-    display: none;
+    flex-direction: column;
   }
 }
 .main-content > * {
@@ -406,18 +430,41 @@ nav a {
 .main-content > * h2 {
   text-align: center;
 }
+@media (min-width: 750px) {
+  .main-content > * {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 50rem;
+  }
+  .main-content > * > * {
+    width: 45%;
+  }
+}
+.child-healthfacts div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.child-healthfacts p {
+  margin: auto;
+}
+.redefine-nutrition div {
+  order: 2;
+}
 footer {
   display: flex;
-  margin-right: 10%;
-  margin-left: 10%;
   margin-top: 1%;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid black;
 }
 footer a {
   text-decoration: none;
   font-weight: bold;
   color: black;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 footer .button {
   margin-top: 0.5rem;
