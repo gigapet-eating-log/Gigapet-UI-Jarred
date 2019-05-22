@@ -11,6 +11,7 @@
 @import "../less/variables.less";
 @import "../less/mixins.less";
 @import "../less/skeleton.less";
+@import "../less/about.less";
 
 html {
   font-size: 62.5%;
@@ -19,23 +20,26 @@ html {
 //Background
 body {
   color: black;
+  overflow-x: hidden;
 }
 
 //Nav
 header {
   border-bottom: 1px solid black;
+  margin: auto;
 }
 
 nav {
   display: flex;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 5%;
+  margin-left: 5%;
   margin-top: 1%;
   justify-content: space-between;
   align-items: center;
   @media (min-width: @bp-larger-than-tablet) {
     justify-content: flex-end;
     margin-right: 5%;
+    width: 80%;
   }
 }
 
@@ -86,6 +90,7 @@ a:active {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url("../images/Landing-Background.jpg");
     height: 800px;
+    max-height: calc(100vh - 80px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,6 +116,7 @@ a:active {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    min-width: 469px;
     h1 {
       font-weight: bold;
       font-size: 5rem;
