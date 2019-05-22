@@ -443,7 +443,6 @@ form {
   }
 }
 .cards-container .card {
-  border-bottom: 1px solid grey;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -488,8 +487,9 @@ form {
   margin-bottom: 0;
 }
 .cards-container .card .author a {
-  width: 5%;
-  padding-right: 10px;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }
 .cards-container .card .author a img {
   width: 16px;
