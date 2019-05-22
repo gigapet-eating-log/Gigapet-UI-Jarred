@@ -15,7 +15,7 @@
     <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link
-      href="http://fonts.googleapis.com/css?family=Raleway:400,300,600"
+      href="https://fonts.googleapis.com/css?family=Raleway:400,300,600"
       rel="stylesheet"
       type="text/css"
     />
@@ -25,27 +25,241 @@
     <link rel="stylesheet" href="css/styles.css" />
 
     <!-- Javascript-->
-    <script src="./js/marketing.js" async></script>
+    <script src="./js/about-component.js" async></script>
   </head>
   <body>
     <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <header>
+    <header class="about-header">
+      <div>
+        <a href="index.html">
+          <img src="./images/dog-puppy-1.gif" alt="logo" />
+        </a>
+      </div>
       <nav>
-        <a href="#">ABOUT</a>
+        <a href="about.html">ABOUT</a>
         <a href="#">CONTACT</a>
-        <a href="#" class="button">Log In</a>
+        <a href="https://zen-dijkstra-f70fbd.netlify.com/" class="button"
+          >Log In</a
+        >
       </nav>
     </header>
 
     <section class="about">
-      <h1>Team Photos</h1>
+      <h1>About Us</h1>
+      <!-- TABS COMPONENT -->
+      <div class="tabs">
+        <div class="topics">
+          <div data-tab="all" class="tab active-tab">ALL</div>
+          <div data-tab="team-lead" class="tab">TEAM LEAD</div>
+          <div data-tab="web-fundamentals" class="tab">
+            UI / MARKETING & WEB DESIGN
+          </div>
+          <div data-tab="front-end" class="tab">FRONT-END REACT ENGINEER</div>
+          <div data-tab="back-end" class="tab">BACK-END ENGINEER</div>
+          <div data-tab="ios" class="tab">iOS ENGINEER</div>
+        </div>
+      </div>
+      <!-- CARDS COMPONENT -->
+      <div class="cards-container">
+        <!-- CARD COMPONENTS -->
+        <div class="card" data-tab="team-lead">
+          <div class="role">
+            Team Lead
+          </div>
+          <div class="author">
+            <div class="img-container">
+              <img src="./images/YvetteZhukovsky.png" />
+            </div>
+            <div class="name">
+              <span>YVETTE ZHUKOVSKY</span>
+              <p>
+                Pupper of Choice:<br />
+                Shih Tzu
+              </p>
+            </div>
+            <a href="https://github.com/azinoVo"
+              ><img src="./images/GitHub-Mark-32px.png" alt="GitHub"
+            /></a>
+            <div class="dog-image">
+              <img src="./images/shih-tzu.svg" alt="Shih-Tzu" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-tab="back-end">
+          <div class="role">
+            Back-End Engineer
+          </div>
+          <div class="author">
+            <div class="img-container">
+              <img src="./images/JoshuaSmoot.jpg" />
+            </div>
+            <div class="name">
+              <span>JOSHUA SMOOT</span>
+              <p>
+                Pupper of Choice:<br />
+                Miniature Schnauzer
+              </p>
+            </div>
+            <a href="https://github.com/azinoVo"
+              ><img src="./images/GitHub-Mark-32px.png" alt="GitHub"
+            /></a>
+            <div class="dog-image">
+              <img
+                src="./images/miniature-schnauzer.svg"
+                alt="Miniature Schnauzer"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-tab="front-end">
+          <div class="role">
+            Front-End Engineer
+          </div>
+          <div class="author">
+            <div class="img-container">
+              <img src="./images/NguyenVo.png" />
+            </div>
+            <div class="name">
+              <span>NGUYEN VO</span>
+              <p>
+                Pupper of Choice:<br />
+                Shiba Inu
+              </p>
+            </div>
+            <a href="https://github.com/azinoVo"
+              ><img src="./images/GitHub-Mark-32px.png" alt="GitHub"
+            /></a>
+            <div class="dog-image">
+              <img src="./images/akitas.svg" alt="Shiba Inu" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-tab="front-end">
+          <div class="role">
+            Front End Engineer
+          </div>
+          <div class="author">
+            <div class="img-container">
+              <img src="./images/MattKlein.jpg" />
+            </div>
+            <div class="name">
+              <span>MATT KLEIN</span>
+              <p>
+                Pupper of Choice:<br />
+                Springer Spaniel
+              </p>
+            </div>
+            <a href="https://github.com/azinoVo"
+              ><img src="./images/GitHub-Mark-32px.png" alt="GitHub"
+            /></a>
+            <div class="dog-image">
+              <img src="./images/springer-spaniel.svg" alt="Springer Spaniel" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-tab="web-fundamentals">
+          <div class="role">
+            Marketing Web Developer & UI Design
+          </div>
+          <div class="author">
+            <div class="img-container">
+              <img src="./images/JarredStanford.jpg" />
+            </div>
+            <div class="name">
+              <span>JARRED STANFORD</span>
+              <p>
+                Pupper of Choice:<br />
+                Saluki
+              </p>
+            </div>
+            <a href="https://github.com/azinoVo"
+              ><img src="./images/GitHub-Mark-32px.png" alt="GitHub"
+            /></a>
+            <div class="dog-image">
+              <img src="./images/saluki.svg" alt="Saluki" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-tab="web-fundamentals">
+          <div class="role">
+            Marketing Web Developer & UI Design
+          </div>
+          <div class="author">
+            <div class="img-container">
+              <img src="./images/NicholasPung.jpg" />
+            </div>
+            <div class="name">
+              <span>NICHOLAS PANG</span>
+              <p>
+                Pupper of Choice:<br />
+                Golden Retriever
+              </p>
+            </div>
+            <a href="https://github.com/azinoVo"
+              ><img src="./images/GitHub-Mark-32px.png" alt="GitHub"
+            /></a>
+            <div class="dog-image">
+              <img
+                src="./images/bernese-mountain-dog.svg"
+                alt="Golden Retriever"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-tab="ios">
+          <div class="role">
+            iOS Developer
+          </div>
+          <div class="author">
+            <div class="img-container">
+              <img src="./images/AlexMata.jpg" />
+            </div>
+            <div class="name">
+              <span>ALEX MATA</span>
+              <p>
+                Pupper of Choice:<br />
+                Malamute
+              </p>
+            </div>
+            <a href="https://github.com/azinoVo"
+              ><img src="./images/GitHub-Mark-32px.png" alt="GitHub"
+            /></a>
+            <div class="dog-image">
+              <img src="./images/malamute.svg" alt="Malamute" />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <footer>
+    <footer class="about-footer">
       <a href="#">ABOUT</a>
       <a href="#">CONTACT</a>
       <a href="#" class="button">Log In</a>
     </footer>
+    <div class="icon-usage">
+      Icons made by
+      <a
+        href="https://www.freepik.com/?__hstc=57440181.756a4d5fc728c8e38b7717e2cf56d6f6.1558554044524.1558554044524.1558554044524.1&__hssc=57440181.5.1558554044525&__hsfp=592281695"
+        title="Freepik"
+        >Freepik</a
+      >
+      from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+      is licensed by
+      <a
+        href="http://creativecommons.org/licenses/by/3.0/"
+        title="Creative Commons BY 3.0"
+        target="_blank"
+        >CC 3.0 BY</a
+      >
+    </div>
     <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   </body>
