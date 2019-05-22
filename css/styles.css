@@ -355,8 +355,13 @@ ol,
 form {
   margin-bottom: 2.5rem;
 }
+@media (min-width: 750px) {
+  .about-header {
+    width: 85%;
+  }
+}
 .about {
-  width: 100%;
+  width: 100%%;
   margin: auto;
   min-height: calc(100vh - 124px);
 }
@@ -521,12 +526,24 @@ body {
 header {
   border-bottom: 1px solid black;
   margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header div {
+  margin-left: 3%;
+  margin-bottom: 0.9rem;
+}
+header div a {
+  width: 10%;
+}
+header div img {
+  width: 20%;
 }
 nav {
   display: flex;
   margin-right: 5%;
   margin-left: 5%;
-  margin-top: 1%;
   justify-content: space-between;
   align-items: center;
 }
@@ -534,7 +551,7 @@ nav {
   nav {
     justify-content: flex-end;
     margin-right: 5%;
-    width: 80%;
+    width: 85%;
   }
 }
 nav .button {
@@ -754,7 +771,7 @@ footer .button {
 }
 @media (min-width: 750px) {
   footer {
-    width: 80%;
+    width: 85%;
     margin: auto;
     padding-left: 20px;
     padding-right: 20px;
