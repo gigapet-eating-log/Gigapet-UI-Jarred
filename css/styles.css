@@ -582,6 +582,11 @@ nav a {
     margin-bottom: 1%;
   }
 }
+@media (min-width: 1000px) {
+  nav a {
+    margin-right: 10%;
+  }
+}
 a:hover {
   color: #e6e6ff;
 }
@@ -733,21 +738,6 @@ a:active {
 }
 .retro-game p {
   animation: fadeFromRight 1.5s;
-}
-.sprite-slideshow div {
-  animation: fadeFromRight 1.5s;
-}
-.sprite-slideshow p {
-  animation: fadeFromLeft 1.5s;
-}
-@media (min-width: 750px) {
-  .sprite-slideshow div {
-    order: 2;
-  }
-  .sprite-slideshow img {
-    width: 50%;
-    margin: auto;
-  }
 }
 footer {
   display: flex;

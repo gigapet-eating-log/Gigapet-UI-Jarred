@@ -73,6 +73,9 @@ nav a {
     margin-right: 5%;
     margin-bottom: 1%;
   }
+  @media (min-width: @bp-larger-than-desktop) {
+    margin-right: 10%;
+  }
 }
 
 a:hover {
@@ -246,24 +249,6 @@ a:active {
   }
   p {
     animation: fadeFromRight 1.5s;
-  }
-}
-
-.sprite-slideshow {
-  div {
-    animation: fadeFromRight 1.5s;
-  }
-  p {
-    animation: fadeFromLeft 1.5s;
-  }
-  @media (min-width: @bp-larger-than-tablet) {
-    div {
-      order: 2;
-    }
-    img {
-      width: 50%;
-      margin: auto;
-    }
   }
 }
 //Footer
