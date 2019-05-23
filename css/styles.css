@@ -7,6 +7,14 @@
 * 12/29/2014
 * Less Version by Seth Coelen https://github.com/whatsnewsaes
 */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes fadeFromLeft {
   from {
     opacity: 0;
@@ -607,14 +615,6 @@ a:active {
     background-size: cover;
     position: relative;
     margin-top: 0px;
-  }
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 .landing-content {
