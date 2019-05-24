@@ -32,7 +32,6 @@ class TabCard {
     this.cardElement = cardElement;
   }
   selectCard() {
-    this.cardElement.style.display = "none";
     this.cardElement.style.display = "flex";
   }
 }
