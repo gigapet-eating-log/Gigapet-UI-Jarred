@@ -707,7 +707,7 @@ a:active {
     display: flex;
     flex-direction: row;
     width: 80%;
-    height: 50rem;
+    min-height: 50rem;
   }
   .main-content > * > * {
     width: 45%;
