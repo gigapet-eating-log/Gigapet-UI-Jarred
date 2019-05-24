@@ -621,6 +621,12 @@ a:active {
     position: relative;
     margin-top: 0px;
   }
+  .landing-body h1 {
+    -webkit-text-stroke: 1px black;
+  }
+  .landing-body p {
+    -webkit-text-stroke: 0.5px black;
+  }
 }
 .landing-content {
   animation: fadein 4s;
