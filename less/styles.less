@@ -31,7 +31,6 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   div {
     margin-left: 3%;
     margin-bottom: 0.9rem;
@@ -44,20 +43,18 @@ header {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 85%;
   @media (min-width: @bp-larger-than-tablet) {
-    justify-content: flex-end;
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-left: 10%;
     width: 85%;
   }
 }
 
 nav .button {
   margin-top: 0.5rem;
-  background-color: #e6e6ff;
+  background-color: @primary;
   @media (min-width: @bp-larger-than-tablet) {
     border: 1px solid black;
   }
@@ -67,11 +64,13 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   color: black;
+  margin-right: 10%;
   @media (min-width: @bp-larger-than-tablet) {
     margin-top: 1.1rem;
     font-size: 1.25rem;
-    margin-right: 5%;
     margin-bottom: 1%;
+    margin-left: 10%;
+    margin-right: 5%;
   }
   @media (min-width: @bp-larger-than-desktop) {
     margin-right: 10%;
@@ -79,7 +78,7 @@ nav a {
 }
 
 a:hover {
-  color: #e6e6ff;
+  color: @primary;
 }
 
 a:active {
@@ -143,7 +142,7 @@ a:active {
 .landing-content a {
   color: black;
   margin-top: 1rem;
-  background-color: #e6e6ff;
+  background-color: @primary;
   height: 50px;
   width: 200px;
   font-size: 1.5rem;
@@ -205,18 +204,6 @@ a:active {
   }
 }
 
-//.fadeFromLeft {
-// animation: fadeFromLeft 1.5s;
-//}
-
-//.fadeFromRight {
-// animation: fadeFromRight 1.5s;
-//}
-
-//.hidden {
-// opacity: 0;
-//}
-
 .child-healthfacts {
   div {
     animation: fadeFromLeft 1.5s;
@@ -268,7 +255,7 @@ footer {
   }
   .button {
     margin-top: 0.5rem;
-    background-color: #e6e6ff;
+    background-color: @primary;
   }
   @media (min-width: @bp-larger-than-tablet) {
     width: 85%;
