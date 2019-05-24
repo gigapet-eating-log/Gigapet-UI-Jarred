@@ -15,7 +15,7 @@ If you would like to check out the files yourself, simply download a copy of the
 
 HTML, CSS, JavaScript
 
-Skeleton: A CSS boilerplate that gets your website started but leaves room for any customiation you would ever desire.
+Skeleton: A CSS boilerplate that gets your website started but leaves room for any customization you could ever desire.
 
 UnDraw: A wonderful collection of customizable open-source illustrations.
 
