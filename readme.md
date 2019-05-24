@@ -14,8 +14,11 @@ If you would like to check out the files yourself, simply download a copy of the
 ## Built With
 
 HTML, CSS, JavaScript
+
 Skeleton: A CSS boilerplate that gets your website started but leaves room for any customiation you would ever desire.
+
 UnDraw: A wonderful collection of customizable open-source illustrations.
+
 Pexels: A great collection of open-source images.
 
 ## Authors
@@ -29,4 +32,5 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 ## Acknowledgments
 
 Special thanks to:
+
 Isaac Hayes: My wonderful PM who not only helped with this project, but also helped me learn all the code used in the project!
