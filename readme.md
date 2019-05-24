@@ -33,4 +33,4 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 Special thanks to:
 
-Isaac Hayes: My wonderful PM who not only helped with this project, but also helped me learn all the code used in the project!
+Isaac Houle: My wonderful PM who not only helped with this project, but also helped me learn all the code used in the project!
